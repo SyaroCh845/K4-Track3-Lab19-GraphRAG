@@ -17,13 +17,14 @@ venv/
 .venv/
 env/
 
-# Large Datasets and data dumps (do not commit 300MB data dumps)
-*.csv
-golden_dataset.csv
-!reports/*.csv
+# Large raw dataset dump (do not commit the streamed HackerNoon pull)
+data/hackernoon_subset.csv
 *.jsonl
 *.parquet
 *.pq
+
+# NOTE: outputs/*.csv and data/golden_dataset.csv ARE required deliverables
+# and must stay tracked — do not add a blanket *.csv ignore here.
 
 # OS files
 .DS_Store
